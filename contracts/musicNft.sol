@@ -9,7 +9,7 @@ contract musicNft is ERC721URIStorage{
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
     address  private _admin;
-    address private _minter;
+    address private _minter; 
      // modifier functions
     modifier onlyAdmin(){
         require(msg.sender==_admin,"this function can only be accessed by the admin");
